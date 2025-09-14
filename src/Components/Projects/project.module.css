@@ -1,6 +1,6 @@
 .projects {
   padding: 40px;
-  background-color: #111;
+  background-color:black;
   color: white;
   min-height: 100vh;
 }
@@ -9,6 +9,7 @@
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
+  color:  #00ffd0;
 }
 
 .grid {
