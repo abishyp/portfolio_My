@@ -32,8 +32,13 @@ const Projects = () => {
 
   return (
     <div className={styles.projects}>
-      <h2 className={styles.title}>My Projects</h2>
-      <div className={styles.grid}>
+      <h2 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" className={styles.title}>My Projects</h2>
+      <div data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0" className={styles.grid}>
         {projectList.map((project) => (
           <div key={project.id} className={styles.card}>
             <img src={project.img} alt={project.title} className={styles.image} />

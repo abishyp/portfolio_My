@@ -18,8 +18,13 @@ const Skills = () => {
   return (
     <section className={styles.skills}>
       <div className={styles.container}>
-        <h2 className={styles.title}>My Skills</h2>
-        <div className={styles.grid}>
+        <h2 data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" className={styles.title}>My Skills</h2>
+        <div data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0" className={styles.grid}>
           {skills.map((skill, index) => (
             <div className={styles.card} key={index} data-name={skill.name}>
               {skill.icon}

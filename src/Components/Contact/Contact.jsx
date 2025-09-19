@@ -63,7 +63,9 @@ const Contact = () => {
           justifyContent="center"
         >
           {/* Left Side: Form */}
-          <Grid item xs={12} md={6}>
+          <Grid data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" item xs={12} md={6}>
             <Paper
               elevation={6}
               sx={{
@@ -214,7 +216,10 @@ const Contact = () => {
           </Grid>
 
           {/* Right Side: Lottie Animation */}
-          <Grid item xs={12} md={6}>
+          <Grid data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500" item xs={12} md={6}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Lottie
                 animationData={contactAnimation}
@@ -230,8 +235,7 @@ const Contact = () => {
         open={openSnackbar}
         autoHideDuration={3000}
         onClose={() => setOpenSnackbar(false)}
-        anchorOrigin={{ vertical: "top", horizontal: "center" }}
-      >
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}>
         <Alert severity="success" sx={{ width: "100%" }}>
           ✅ Message sent successfully!
         </Alert>

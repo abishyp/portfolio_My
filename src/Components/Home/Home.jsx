@@ -10,11 +10,13 @@ const Home = () => {
   return (
     <section className={styles.home}>
       <div className={styles["home-content"]}>
-        <h1>
+        <h1 data-aos="fade-up"
+          data-aos-duration="1000">
           Hi, I'm <span>Abish</span>
         </h1>
 
-        <h2>
+        <h2 data-aos="fade-up"
+          data-aos-duration="1500">
           <RotatingText
             texts={[
               "Software Developer",
@@ -27,12 +29,14 @@ const Home = () => {
           />
         </h2>
 
-        <p>
+        <p data-aos="fade-up"
+          data-aos-duration="2000">
           I build modern, responsive websites using
           <span> React, Node.js, and MongoDB</span>.
         </p>
 
-        <div className={styles.buttons}>
+        <div data-aos="fade-up"
+          data-aos-duration="2500" className={styles.buttons}>
           <Link to="/projects" className={styles.btn}>
             View Projects
           </Link>
@@ -41,7 +45,8 @@ const Home = () => {
           </a>
         </div>
 
-        <div className={styles.socials}>
+        <div data-aos="fade-up"
+          data-aos-duration="3000" className={styles.socials}>
           <a
             href="https://github.com/"
             target="_blank"
@@ -64,7 +69,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className={styles.content2}>
+      <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2000" className={styles.content2}>
         <Suspense fallback={<div>Loading...</div>}>
           <HomeAnimation />
         </Suspense>

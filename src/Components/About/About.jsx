@@ -5,18 +5,22 @@ const About = () => {
   return (
     <section className={styles.about}>
       <div className={styles.container}>
-        <h1 className={styles.title}>About Me</h1>
-        <p className={styles.subtitle}>
+        <h1 data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500" className={styles.title}>About Me</h1>
+        <p data-aos="fade-up"
+          data-aos-duration="3000" className={styles.subtitle}>
           Hi, I'm <span>Abish Y</span> — a passionate developer who loves
           building modern, responsive, and user-friendly applications.
         </p>
 
         {/* Single merged section */}
-        <div className={styles.section}>
+        <div data-aos="fade-up"
+          data-aos-duration="3000" className={styles.section}>
           <p>
             I am a self-driven learner and technology enthusiast who enjoys
             exploring new frameworks, building creative solutions, and
-            continuously improving my craft.  
+            continuously improving my craft.
             I specialize in developing full-stack applications with a focus on
             clean code, smooth user experience, and scalability. Whether it’s
             frontend design or backend logic, I enjoy turning ideas into
@@ -25,7 +29,8 @@ const About = () => {
         </div>
 
         {/* Mission & Goals */}
-        <div className={styles.cards}>
+        <div data-aos="fade-up"
+          data-aos-duration="3000" className={styles.cards}>
           <div className={styles.card}>
             <h2>🎯 Mission</h2>
             <p>
@@ -43,10 +48,11 @@ const About = () => {
         </div>
 
         {/* Quick Info */}
-        <div className={styles.highlights}>
+        <div data-aos="fade-up"
+          data-aos-duration="3000" className={styles.highlights}>
           <div className={styles.highlight}>
             <h3>📚 Education</h3>
-           <p>Master in Computer Applications (MCA)</p>
+            <p>Master in Computer Applications (MCA)</p>
           </div>
           <div className={styles.highlight}>
             <h3>⚡ Interests</h3>
