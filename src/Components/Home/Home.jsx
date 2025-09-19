@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { Github, Linkedin, Mail } from "lucide-react";
 import styles from "./Home.module.css";
 import RotatingText from "../../RotatingText/RotatingText";
@@ -37,10 +37,21 @@ const Home = () => {
 
         <div data-aos="fade-up"
           data-aos-duration="2500" className={styles.buttons}>
-          <Link to="/projects" className={styles.btn}>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            spy={true}
+            className={styles.btn}
+          >
             View Projects
-          </Link>
-          <a href="/Abish_Y_Resume.Pdf" download className={styles.btnOutline}>
+          </ScrollLink>
+          <a
+            href="/Abish_Y_Resume.pdf"
+            download="Abish_Y_Resume.pdf"
+            className={styles.btnOutline}
+          >
             Download CV
           </a>
         </div>
@@ -70,9 +81,9 @@ const Home = () => {
       </div>
 
       <div data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="2000" className={styles.content2}>
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000" className={styles.content2}>
         <Suspense fallback={<div>Loading...</div>}>
           <HomeAnimation />
         </Suspense>
